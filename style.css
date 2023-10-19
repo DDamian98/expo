@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/assets/banner.png);
+    background-size:cover;
+    background-attachment: fixed;
+    display: block;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.card-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-img h1{
+    color: #f0f0f0;
+    font-weight: 800;
+}
+.container img{
+    width: 300px;
+}
+
+.container-btn{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    gap: 2rem;
+    position:static;
+}
+.card-inf{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-inf img{
+    width: 20px;
+}
+.card-inf .btn {
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border: none;
+    animation: moveUpDown 1s linear infinite alternate;
+
+}
+.card-inf .btn:hover{
+    animation-play-state: paused;
+
+}
+
+.card-detail{
+    display: none;
+    padding: 1rem;
+}
+.icons_arrow{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    display: flex;
+    gap:3rem;
+    margin-bottom: -2rem;
+
+}
+.icons_arrow i{
+    font-size: 20px;
+    color: #f0f0f0;
+}
+.fa-beat{
+    animation-duration: var(--fa-animation-duration, 2s)!important;
+}
+
+.container-title{
+    position: relative;
+    width: 450px;
+    max-height: 300px;
+}
+
+.container-title img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+  }
+  
+  .container-title h2 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+ 
+  }
+ 
+.card-inf span{
+    
+    color: #8ff9ff;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #8ff9ff; 
+    
+}
+.card {
+    position: relative;
+    padding: 20px;
+    color: #fcfcfc;
+    width: 700px; /* Define el ancho de la tarjeta */
+    max-height: 1000px;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    padding: 3rem 4rem 3rem 4rem;
+}
+.parrafo-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f0f0f0;
+    padding: 1rem 2rem 1rem 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+}
+.parrafo-section p{
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.parrafo-section i {
+    font-size: 24px;
+    color: #06dfff; /* Color del ícono */
+}
+.frame1{
+    background-image: url(/assets/Marco.0B.png);
+    background-size: cover;
+    background-repeat: round;
+}
+.frame2{
+    background-image: url(/assets/MarcoBMorado.png);
+    background-size: cover;
+    background-repeat: round;
+}
+.frame3{
+    background-image: url(/assets/Marco.0B.png);
+    background-size: cover;
+    background-repeat: round;
+    
+}
+.frame4{
+    background-image: url(/assets/Marco.0B.png);
+    background-size: cover;
+    background-repeat: round;
+    
+}
+.frame5{
+    background-image: url(/assets/Marco.0B.png);
+    background-size: cover;
+    background-repeat: round;
+}
+.img1 {
+    max-height: 120px;
+  }
+.img2{
+    max-height: 160px;
+}
+.img3{
+    max-height: 120px;
+}
+.card-information{
+    display: none;
+    padding: 0rem;
+}
+.slider-card{
+    display: grid;
+    place-items: center;
+}
+#slider2{
+    display: none;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px); /* Ajusta la distancia del movimiento */
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-image: url(/assets/Fondo.1.png);
+        background-position: center;
+        
+        
+    }
+    .container-btn{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: fixed;
+        padding: 0px;
+        padding-bottom: 1rem;
+        padding-right: 0.5rem;
+        bottom: 0;
+        right: 0;
+        gap: 1rem;
+        z-index: 999;
+    }
+    .card-inf{
+        align-items:end;
+    }
+    .card-inf span{
+        display: none;
+    }
+    .card-inf .btn {
+        width: 40px;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 3px;
+        color: white;
+        border: none;
+        animation: moveUpDown 1s linear infinite alternate;
+    
+    }
+
+    .img1 {
+        max-height: 120px;
+      }
+    .img2{
+        max-height: 160px;
+    }
+    .img3{
+        max-height: 120px;
+    }
+    .container-title h2{
+        top:15%;
+        left: 25%;
+        transform: translate(-15%,-25%);
+       
+      }
+    .container-title{
+        position: relative;
+        width: 300px;
+        max-height: 300px;
+    }
+    .container-title img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: 280px; /* Mantiene la relación de aspecto de la imagen */
+      }
+      
+      
+    .card-detail{
+        padding: 0rem;
+    }
+    .slider-card{
+        display: grid;
+        place-items: center;
+    }
+    .card-information{
+        display: none;
+        padding: 0rem;
+    }
+
+ 
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px;
+        width: 98%; 
+        padding: 5rem 1rem 5rem 1rem;/* Define el ancho de la tarjeta */
+    
+    }
+    .parrafo-section{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #f0f0f0;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+
+
+    }
+    .parrafo-section p{
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+    .parrafo-section i {
+        font-size: 24px;
+        color: #8ff9ff; /* Color del ícono */
+    }
+    .frame1{
+        background-image: url(/assets/MarcoGirado.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .frame2{
+        background-image: url(/assets/MarcoGiradoCyan.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .frame3{
+        background-image: url(/assets/MarcoGiradoMorado.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+   
+    
+}
